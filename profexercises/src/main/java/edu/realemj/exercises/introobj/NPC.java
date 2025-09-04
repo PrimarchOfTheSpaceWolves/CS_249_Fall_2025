@@ -2,6 +2,17 @@ package edu.realemj.exercises.introobj;
 
 public class NPC {
     private int health = 100;
+    private String name = "";
+
+    public NPC() {}
+
+    public NPC(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public int getHealth() {
         return health;
@@ -14,5 +25,9 @@ public class NPC {
         else {
             health = 0;
         }
+    }
+
+    public String toString() {
+        return "NPC: " + name + " (health: " + health + ")";
     }
 }
