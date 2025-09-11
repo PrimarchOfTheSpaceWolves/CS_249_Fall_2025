@@ -26,6 +26,11 @@ public class FoodRationer {
 
         // Print answer
         System.out.println("Days left: " + daysLeft);
+        System.out.printf("Days left: %.3f\n", daysLeft);
+        System.out.printf("Number of people: %05d\n", numPeople);
+
+        String status = String.format("%d people survived.", numPeople);
+        System.out.println(status);
 
         int ic = 65;
         char c = (char)ic;

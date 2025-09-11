@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises.basic.FoodRationer"
+    mainClass = "edu.realemj.exercises.selection.FoodCheck"
     mainModule = "profexercisesmod"
 }
 
