@@ -18,7 +18,7 @@ test {
 }
 
 application {
-    mainClass = "edu.realemj.exercises.loops.DoWhilesStore"
+    mainClass = "edu.realemj.exercises.loops.L33t"
     mainModule = "profexercisesmod"
 }
 

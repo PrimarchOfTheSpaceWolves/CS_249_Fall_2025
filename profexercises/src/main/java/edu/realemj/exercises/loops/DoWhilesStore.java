@@ -10,8 +10,10 @@ public class DoWhilesStore {
         GeneralStore store = new GeneralStore();
         store.enter(input, supplies);
         System.out.println("SUPPLIES AFTER SHOPPING:");
-        System.out.println(supplies);
+        System.out.println(supplies.toString());
         System.out.println("DONE");
+        Object c = new Object();
+        c.toString();
 
     }
 }

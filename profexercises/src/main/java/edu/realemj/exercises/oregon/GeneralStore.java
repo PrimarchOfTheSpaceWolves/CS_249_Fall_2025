@@ -23,17 +23,23 @@ public class GeneralStore {
                     System.out.println("I can't do that transaction!");
                 }
             }
+
+            System.out.println(supplies);
+
         } while(!done);
     }
 
     public void printStorePrompt() {
-        // TODO
+        System.out.println("** MR. DO-WHILE'S EMPORIUM *****");
+        System.out.println("What do you want to buy/sell, stranger?");
+        for(SupplyType st : SupplyType.values()) {
+            System.out.println("* " + st.getName());
+        }
     }
 
     public boolean attemptPurchase(int value,
                                    SupplyType supply,
                                    Supplies supplies) {
-        // TODO
-        return false;
+        return supplies.add(supply, value);
     }
 }
