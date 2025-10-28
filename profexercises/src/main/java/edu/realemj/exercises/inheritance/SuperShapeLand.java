@@ -16,5 +16,7 @@ public class SuperShapeLand {
         Circle c3 = new Circle(7.1,
                                 Matrix.make2DPoint(-3,2));
 
+        System.out.println(c3);
+
     }
 }
