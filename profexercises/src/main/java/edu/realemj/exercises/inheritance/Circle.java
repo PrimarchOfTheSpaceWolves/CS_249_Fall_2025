@@ -1,6 +1,7 @@
 package edu.realemj.exercises.inheritance;
 
 import edu.realemj.exercises.math.Matrix;
+import edu.realemj.exercises.math.Utility;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -44,6 +45,20 @@ public class Circle extends Shape {
     @Override
     public double getArea() {
         return Math.PI * radius * radius;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        boolean isEqual = false;
+
+        if(other instanceof Circle cother) {
+            if(Utility.equals(radius, cother.radius) &&
+                super.equals(other)) {
+                isEqual = true;
+            }
+        }
+
+        return isEqual;
     }
 
 }

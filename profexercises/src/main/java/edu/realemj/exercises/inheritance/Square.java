@@ -1,5 +1,7 @@
 package edu.realemj.exercises.inheritance;
 
+import edu.realemj.exercises.math.Utility;
+
 public class Square extends Shape {
     private double side = 1.0;
 
@@ -28,5 +30,20 @@ public class Square extends Shape {
     @Override
     public double getArea() {
         return side*side;
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        boolean isEqual = false;
+
+        if(other instanceof Square sqother) {
+            if(Utility.equals(side, sqother.side) &&
+                super.equals(other)) {
+
+                isEqual = true;
+            }
+        }
+
+        return isEqual;
     }
 }

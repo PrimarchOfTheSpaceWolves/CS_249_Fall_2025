@@ -43,4 +43,17 @@ public class Shape {
     public double getArea() {
         return 0;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        boolean isEqual = false;
+
+        if(other instanceof Shape sother) {
+            if(pos.equals(sother.pos) && filled == sother.filled) {
+                isEqual = true;
+            }
+        }
+
+        return isEqual;
+    }
 }
