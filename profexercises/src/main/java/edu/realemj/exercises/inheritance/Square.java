@@ -16,4 +16,17 @@ public class Square extends Shape {
     public void setSide(double side) {
         this.side = side;
     }
+
+    @Override
+    public String toString() {
+        String s = "Square (side = " + side + ")";
+        s += " comes from ";
+        s += super.toString();
+        return s;
+    }
+
+    @Override
+    public double getArea() {
+        return side*side;
+    }
 }

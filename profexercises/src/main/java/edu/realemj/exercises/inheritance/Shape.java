@@ -39,4 +39,8 @@ public class Shape {
                 + "filled = " + filled
                 + ")";
     }
+
+    public double getArea() {
+        return 0;
+    }
 }

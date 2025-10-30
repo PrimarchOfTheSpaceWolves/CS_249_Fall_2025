@@ -18,5 +18,20 @@ public class SuperShapeLand {
 
         System.out.println(c3);
 
+        Square sq1 = new Square(7.0);
+
+        printShape(s1);
+        printShape(c2);
+        printShape(sq1);
+    }
+
+    public static void printShape(Shape s) {
+        System.out.println("BEHOLD!");
+        System.out.println(s); // s.toString()
+        System.out.println("Area = " + s.getArea());
+        if(s instanceof Circle c) {
+            System.out.println("Radius = " + c.getRadius());
+            c.setRadius(5.6);
+        }
     }
 }
