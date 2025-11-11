@@ -38,7 +38,9 @@ public class Quotient {
         catch(Exception e) {
             System.err.println("I don't know what you did, but CLEARLY it was wrong.");
             System.err.println(e);
+            e.printStackTrace();
         }
+
         System.out.println("DONE");
     }
 }
