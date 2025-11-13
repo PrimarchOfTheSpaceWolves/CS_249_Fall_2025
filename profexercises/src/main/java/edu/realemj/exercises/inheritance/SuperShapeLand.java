@@ -6,7 +6,8 @@ import edu.realemj.exercises.math.Matrix;
 public class SuperShapeLand {
     public static void main(String [] args) {
         try {
-            Shape s1 = new Shape(Matrix.make2DPoint(5, 7), true);
+            //Shape s1 = new Shape(Matrix.make2DPoint(5, 7), true);
+            Shape s1 = new Square(8.9);
             System.out.println(s1);
             Circle c1 = new Circle();
             System.out.println(c1.getPos().toPointString());
