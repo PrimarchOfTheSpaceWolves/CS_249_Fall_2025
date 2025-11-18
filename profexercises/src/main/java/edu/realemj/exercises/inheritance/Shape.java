@@ -2,7 +2,7 @@ package edu.realemj.exercises.inheritance;
 
 import edu.realemj.exercises.math.*;
 
-public abstract class Shape {
+public abstract class Shape implements Drawable {
     private Matrix pos = Matrix.make2DPoint(0,0);
     protected boolean filled;
 

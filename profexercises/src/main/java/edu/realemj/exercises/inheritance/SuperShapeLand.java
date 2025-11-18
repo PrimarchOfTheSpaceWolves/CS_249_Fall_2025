@@ -2,6 +2,7 @@ package edu.realemj.exercises.inheritance;
 
 import edu.realemj.exercises.exceptions.InvalidRadiusException;
 import edu.realemj.exercises.math.Matrix;
+import java.util.*;
 
 public class SuperShapeLand {
     public static void main(String [] args) {
@@ -27,7 +28,20 @@ public class SuperShapeLand {
             printShape(c2);
             printShape(sq1);
 
-            Circle c4 = new Circle(-6.7);
+            //Circle c4 = new Circle(-6.7);
+
+            ArrayList<Shape> allShapes = new ArrayList<>();
+            allShapes.add(new Circle(5.6));
+            allShapes.add(new Square(4));
+            allShapes.add(new Circle(3));
+
+            System.out.println("ALL:");
+            for(Shape s: allShapes) {
+                if(s instanceof Circle c) {
+                    System.out.println(c.getRadius());
+                }
+            }
+
         }
         catch(InvalidRadiusException e) {
             System.err.println("Bad radius somewhere: " + e.getMessage());
